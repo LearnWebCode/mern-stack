@@ -1,0 +1,13 @@
+version: "3.9"
+services:
+  mongo:
+    container_name: "mernstackdb"
+    image: mongo:5.0.8-focal
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - ./db:/data/db
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: root
