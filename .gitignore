@@ -2,3 +2,4 @@ node_modules/
 db/
 .DS_Store
 package-lock.json
+finished-product-reference/public/uploaded-photos/

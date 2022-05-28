@@ -8,7 +8,7 @@ const ReactDOMServer = require("react-dom/server")
 const fse = require("fs-extra")
 const upload = multer()
 const sanitizeHTML = require("sanitize-html")
-const AnimalCard = require("./src/AnimalCard").default
+const AnimalCard = require("./src/components/AnimalCard").default
 
 // When the app first launches, make sure the "uploaded-photos" folder exists
 fse.ensureDirSync(path.join("public", "uploaded-photos"))
