@@ -16,3 +16,11 @@ mongodb://root:root@localhost:27017/
 - [Docker Desktop](https://www.docker.com/products/docker-desktop/)
 - [MongoDB Compass](https://www.mongodb.com/products/compass)
 - [Visual Studio Code](https://code.visualstudio.com/)
+
+## React Tip Regarding Props
+
+If you have an object with several properties that you want to pass as props, you can use the following spread syntax. For example, this would save us from having to manually type out the props for name, species, photo and \_id:
+
+```
+<AnimalCard {...animal} key={animal._id} readOnly={true} />
+```
