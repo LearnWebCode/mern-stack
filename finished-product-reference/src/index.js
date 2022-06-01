@@ -1,6 +1,6 @@
-import Axios from "axios"
-import React, { useState, useEffect, useRef } from "react"
+import React, { useState, useEffect } from "react"
 import { createRoot } from "react-dom/client"
+import Axios from "axios"
 import CreateNewForm from "./components/CreateNewForm"
 import AnimalCard from "./components/AnimalCard"
 
@@ -22,9 +22,9 @@ function App() {
       </p>
       <CreateNewForm setAnimals={setAnimals} />
       <div className="animal-grid">
-        {animals.map(animal => (
-          <AnimalCard key={animal._id} name={animal.name} species={animal.species} photo={animal.photo} setAnimals={setAnimals} id={animal._id} />
-        ))}
+        {animals.map(function (animal) {
+          return <AnimalCard key={animal._id} name={animal.name} species={animal.species} photo={animal.photo} id={animal._id} setAnimals={setAnimals} />
+        })}
       </div>
     </div>
   )
