@@ -22,5 +22,5 @@ mongodb://root:root@localhost:27017/
 If you have an object with several properties that you want to pass as props, you can use the following spread syntax. For example, this would save us from having to manually type out the props for name, species, photo and \_id:
 
 ```
-<AnimalCard {...animal} key={animal._id} readOnly={true} setAnimals={setAnimals} />
+<AnimalCard {...animal} key={animal._id} />
 ```
