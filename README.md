@@ -27,4 +27,4 @@ If you have an object with several properties that you want to pass as props, yo
 
 ## React Escapes HTML
 
-Towards the end of the video when I use the `<%- generatedHTML %>` tag in EJS; where the dash tells EJS to not escape the output... we are able to safely do that because React escapes its output. You can test this out by going into MongoDB Compass, and changing an animal&rsquo;s name to be `Meowsalot<strong>Hello</strong>` and notice on our homepage the word "Hello" is not actually bold. If you view the source for our homepage you'll notice React automatically turned the `<` into a `$gt;` for us.
+Towards the end of the video when I use the `<%- generatedHTML %>` tag in EJS; where the dash tells EJS to not escape the output... we are able to safely do that because React escapes its output. You can test this out by going into MongoDB Compass, and changing an animal&rsquo;s name to be `Meowsalot<strong>Hello</strong>` and notice on our homepage the word "Hello" is not actually bold. If you view the source for our homepage you'll notice React automatically turned the `<` into a `&gt;` for us.
